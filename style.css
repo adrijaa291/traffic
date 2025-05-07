@@ -1,29 +1,97 @@
-div{
-    height: 700px;
-    width: 200px;
+body{
     background-color: black;
+}
+.outerDiv{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 12, 12);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.innerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.circle{
+    margin: 30px;
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 #black{
     height: 25px;
     background-color: black;
 }
-#red, #yellow, #green{
-    margin: 30px;
-    padding: 30px;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-}
 
 #red{
     background-color: red;
+    animation: blinkAnim 100ms steps(2, start) infinite;
 }
-
 #yellow{
     background-color: yellow;
+    animation: blinkAnim 200ms steps(2, start) infinite;
 }
 
 #green{
     background-color: green;
+    animation: blinkAnim 300ms steps(2, start) infinite;
+}
+
+#purple{
+    background-color: purple;
+    animation: blinkAnim 300ms steps(2, start) infinite;
+}
+
+#pink{
+    background-color: pink;
+    animation: blinkAnim 200ms steps(2, start) infinite;
+}
+
+#blue{
+    background-color: blue;
+    animation: blinkAnim 100ms steps(2, start) infinite;
+}
+
+#brown{
+    background-color: brown;
+    animation: blinkAnim 200ms steps(2, start) infinite;
+}
+
+#magenta{
+    background-color: magenta;
+    animation: blinkAnim 300ms steps(2, start) infinite;
+}
+#cyan{
+    background-color: cyan;
+    animation: blinkAnim 400ms steps(2, start) infinite;
+}
+#gray{
+    background-color: gray;
+    animation: blinkAnim 100ms steps(2, start) infinite;
+}
+#teal{
+    background-color: teal;
+    animation: blinkAnim 250ms steps(2, start) infinite;
+}
+#indigo{
+    background-color: indigo;
+    animation: blinkAnim 500ms steps(2, start) infinite;
+}
+
+
+
+@keyframes blinkAnim {
+    from{
+        visibility: visible;
+    }
+    to{
+        visibility: hidden;
+    }
 }
